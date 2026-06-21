@@ -73,6 +73,8 @@ function updateMeta() {
   setMetaAttr('meta[name="twitter:title"]', 'content', title);
   setMetaAttr('meta[name="twitter:description"]', 'content', desc);
   setMetaAttr('link[rel="canonical"]', 'href', url);
+  const h1 = document.getElementById('seo-h1');
+  if (h1) h1.textContent = t('seoHeading');
   updateDocumentTitle();
 }
 

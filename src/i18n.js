@@ -33,9 +33,10 @@ const STRINGS = {
     csCopy: 'Kopyala',
     csCopied: 'Kopyalandı!',
     csClose: 'Kapat',
-    metaTitle: 'Markdown Görüntüleyici ve Editör — Ücretsiz, Online ve Masaüstü',
+    metaTitle: 'Markdown Editör & Görüntüleyici Online — Ücretsiz, PDF',
     metaDescription:
-      'Canlı önizleme, sözdizimi renklendirme, koyu tema ve HTML/PDF dışa aktarma ile ücretsiz Markdown görüntüleyici ve editör. .md dosyalarını tarayıcıda aç veya masaüstü uygulamasını indir.',
+      'Ücretsiz online Markdown editörü ve görüntüleyici — canlı önizleme. .md dosyası aç, düzenle ve PDF veya HTML olarak dışa aktar. Kayıt yok. Web + masaüstü.',
+    seoHeading: 'Ücretsiz Online Markdown Editörü ve Görüntüleyici — Canlı Önizleme',
   },
   en: {
     open: 'Open',
@@ -65,9 +66,10 @@ const STRINGS = {
     csCopy: 'Copy',
     csCopied: 'Copied!',
     csClose: 'Close',
-    metaTitle: 'Markdown Viewer & Editor — Free Online & Desktop App',
+    metaTitle: 'Markdown Viewer & Editor Online — Free, Live Preview & PDF',
     metaDescription:
-      'Free Markdown viewer & editor with live preview, syntax highlighting, dark mode and export to HTML/PDF. Open .md files in your browser or download the desktop app.',
+      'Free online Markdown editor & viewer with live preview. Open .md files, edit, and export to PDF or HTML — no signup. Web app plus desktop download.',
+    seoHeading: 'Free Online Markdown Editor & Viewer with Live Preview',
   },
   es: {
     open: 'Abrir',
@@ -97,9 +99,10 @@ const STRINGS = {
     csCopy: 'Copiar',
     csCopied: '¡Copiado!',
     csClose: 'Cerrar',
-    metaTitle: 'Visor y Editor de Markdown — Gratis, Online y de Escritorio',
+    metaTitle: 'Editor y Visor de Markdown Online — Gratis y con PDF',
     metaDescription:
-      'Visor y editor de Markdown gratis con vista previa en vivo, resaltado de sintaxis, modo oscuro y exportación a HTML/PDF. Abre archivos .md en el navegador o descarga la app de escritorio.',
+      'Editor y visor de Markdown online y gratis con vista previa. Abre archivos .md, edita y exporta a PDF o HTML. Sin registro. Web y app de escritorio.',
+    seoHeading: 'Editor y Visor de Markdown Online y Gratis con Vista Previa',
   },
 };
 
