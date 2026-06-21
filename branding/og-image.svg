@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- logo + wordmark -->
+  <g transform="translate(80,66)">
+    <rect width="84" height="84" rx="18" fill="url(#accent)"/>
+    <path d="M20 64 V28 L36 47 L52 28 V64" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M66 28 V50" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M57 43 L66 54 L75 43" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="104" y="57" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#e6edf3">MarkView</text>
+  </g>
+
+  <!-- headline -->
+  <text x="80" y="292" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" fill="#ffffff">Markdown Viewer</text>
+  <text x="80" y="372" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" fill="#3b82f6">&amp; Editor</text>
+
+  <!-- subhead -->
+  <text x="84" y="450" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#8b949e">Live preview · Syntax highlighting · HTML &amp; PDF</text>
+
+  <!-- pills -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">
+    <rect x="80" y="506" width="130" height="56" rx="28" fill="#1f6feb"/>
+    <text x="145" y="543" fill="#fff" text-anchor="middle">Free</text>
+    <rect x="226" y="506" width="270" height="56" rx="28" fill="#21262d"/>
+    <text x="361" y="543" fill="#e6edf3" text-anchor="middle">Online &amp; Desktop</text>
+  </g>
+
+  <text x="1120" y="588" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#8b949e" text-anchor="end">markdown-view.com</text>
+
+  <!-- faux app window -->
+  <g transform="translate(740,116)">
+    <rect width="380" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+    <rect width="380" height="40" rx="14" fill="#161b22"/>
+    <rect y="26" width="380" height="14" fill="#161b22"/>
+    <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="50" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="74" cy="20" r="6" fill="#27c93f"/>
+    <line x1="190" y1="40" x2="190" y2="286" stroke="#30363d" stroke-width="2"/>
+    <g fill="#6e7681">
+      <rect x="22" y="66" width="120" height="10" rx="5"/>
+      <rect x="22" y="88" width="90" height="10" rx="5"/>
+      <rect x="22" y="110" width="150" height="10" rx="5"/>
+      <rect x="22" y="132" width="70" height="10" rx="5"/>
+      <rect x="22" y="172" width="110" height="10" rx="5"/>
+      <rect x="22" y="194" width="140" height="10" rx="5"/>
+      <rect x="22" y="216" width="100" height="10" rx="5"/>
+    </g>
+    <rect x="218" y="62" width="120" height="18" rx="5" fill="#3b82f6"/>
+    <rect x="218" y="94" width="158" height="10" rx="5" fill="#30363d"/>
+    <rect x="218" y="112" width="150" height="10" rx="5" fill="#30363d"/>
+    <rect x="218" y="142" width="158" height="42" rx="6" fill="#161b22" stroke="#30363d"/>
+    <rect x="218" y="200" width="100" height="10" rx="5" fill="#30363d"/>
+    <rect x="218" y="218" width="140" height="10" rx="5" fill="#30363d"/>
+  </g>
+</svg>

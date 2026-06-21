@@ -1,0 +1,8 @@
+# https://markdown-view.com/robots.txt
+User-agent: *
+Allow: /
+
+# The installer is a large binary, not a page — keep crawlers off it.
+Disallow: /downloads/
+
+Sitemap: https://markdown-view.com/sitemap.xml

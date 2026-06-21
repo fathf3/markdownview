@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Markdown Viewer &amp; Editor — Free Online &amp; Desktop App</title>
+    <meta
+      name="description"
+      content="Free Markdown viewer &amp; editor with live preview, syntax highlighting, dark mode and export to HTML/PDF. Open .md files in your browser or download the desktop app."
+    />
+    <meta
+      name="keywords"
+      content="markdown viewer, markdown editor, markdown online, md viewer, markdown preview, open md file, markdown to pdf, markdown to html, free markdown editor, markdown reader, online markdown"
+    />
+    <meta name="author" content="MarkView" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="yandex" content="index, follow" />
+    <link rel="canonical" href="https://markdown-view.com/" />
+
+    <!-- Language alternates (hreflang) -->
+    <link rel="alternate" hreflang="x-default" href="https://markdown-view.com/" />
+    <link rel="alternate" hreflang="en" href="https://markdown-view.com/?lang=en" />
+    <link rel="alternate" hreflang="tr" href="https://markdown-view.com/?lang=tr" />
+    <link rel="alternate" hreflang="es" href="https://markdown-view.com/?lang=es" />
+
+    <!-- Search engine verification.
+         Google is verified at the domain level via GoDaddy DNS (no meta tag needed). -->
+    <meta name="yandex-verification" content="57ba20692e77b82e" />
+
+    <!-- Icons & PWA -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="application-name" content="MarkView" />
+    <meta name="apple-mobile-web-app-title" content="MarkView" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Telegram…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MarkView" />
+    <meta property="og:title" id="og-title" content="Markdown Viewer &amp; Editor — Free Online &amp; Desktop App" />
+    <meta property="og:description" id="og-desc" content="Free Markdown viewer &amp; editor with live preview, syntax highlighting and export to HTML/PDF. Open .md files online or get the desktop app." />
+    <meta property="og:url" id="og-url" content="https://markdown-view.com/" />
+    <meta property="og:image" content="https://markdown-view.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MarkView — Markdown Viewer &amp; Editor" />
+    <meta property="og:locale" id="og-locale" content="en_US" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Markdown Viewer &amp; Editor — Free Online &amp; Desktop App" />
+    <meta name="twitter:description" content="Free Markdown viewer &amp; editor with live preview, syntax highlighting and export to HTML/PDF." />
+    <meta name="twitter:image" content="https://markdown-view.com/og-image.png" />
+
+    <!-- Structured data (schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "MarkView",
+        "alternateName": "Markdown Viewer & Editor",
+        "url": "https://markdown-view.com/",
+        "description": "Free Markdown viewer and editor with live preview, syntax highlighting, dark mode and export to HTML/PDF. Works online and as a desktop app.",
+        "applicationCategory": "Productivity",
+        "operatingSystem": "Web, Windows",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "inLanguage": ["en", "tr", "es"],
+        "featureList": [
+          "Live Markdown preview",
+          "Split editor and preview",
+          "Syntax highlighting",
+          "Dark and light theme",
+          "Export to HTML and PDF",
+          "Open .md files",
+          "Offline desktop app"
+        ],
+        "browserRequirements": "Requires JavaScript.",
+        "softwareVersion": "1.0.0"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="toolbar">
+        <div class="brand">
+          <span class="logo">📝</span>
+          <span class="brand-name">MarkView</span>
+        </div>
+
+        <div class="filename-wrap">
+          <span id="filename" class="filename">Adsız.md</span>
+        </div>
+
+        <div class="spacer"></div>
+
+        <button id="open" class="btn" data-i18n="open" data-i18n-title="openTitle">Aç</button>
+        <button id="save" class="btn" data-i18n="save" data-i18n-title="saveTitle">Kaydet</button>
+
+        <div class="view-toggle" role="group">
+          <button data-view="editor" data-i18n="viewEditor">Editör</button>
+          <button data-view="split" data-i18n="viewSplit">Bölünmüş</button>
+          <button data-view="preview" data-i18n="viewPreview">Önizleme</button>
+        </div>
+
+        <button id="cheatsheet" class="btn" data-i18n="cheatsheet" data-i18n-title="cheatsheetTitle">
+          Cheat Sheet
+        </button>
+
+        <a
+          id="download"
+          class="btn btn-accent"
+          href="https://github.com/fathf3/markdownview/releases/latest/download/MarkView-Setup.exe"
+          rel="noopener"
+          data-i18n-title="downloadTitle"
+        >
+          <span class="dl-icon">⬇</span> <span data-i18n="download">İndir</span>
+        </a>
+
+        <div class="export">
+          <button id="exportBtn" class="btn" data-i18n="export" data-i18n-title="exportTitle">
+            Dışa Aktar ▾
+          </button>
+          <div id="exportMenu" class="menu">
+            <button data-export="html" data-i18n="exportHtml">🌐 HTML olarak</button>
+            <button data-export="pdf" data-i18n="exportPdf">📄 PDF olarak (yazdır)</button>
+          </div>
+        </div>
+
+        <select id="lang" class="lang-select" data-i18n-title="langTitle" aria-label="Language">
+          <option value="tr">🇹🇷 Türkçe</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="es">🇪🇸 Español</option>
+        </select>
+
+        <button id="theme" class="btn icon-btn" data-i18n-title="themeTitle">🌙</button>
+      </header>
+
+      <main id="panes" class="panes" data-view="split">
+        <section class="editor-pane">
+          <textarea
+            id="editor"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+            data-i18n-ph="editorPlaceholder"
+          ></textarea>
+        </section>
+        <div id="gutter" class="gutter"></div>
+        <article class="preview-pane">
+          <div id="preview" class="markdown-body"></div>
+        </article>
+      </main>
+    </div>
+
+    <!-- Cheat sheet modal -->
+    <div id="cheatModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <header class="modal-head">
+          <h2 id="csHeading" data-i18n="csHeading">Markdown Cheat Sheet</h2>
+          <button id="csClose" class="btn icon-btn" data-i18n-title="csClose" title="Kapat">✕</button>
+        </header>
+        <p id="csIntro" class="modal-intro" data-i18n="csIntro"></p>
+        <div id="csBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <div id="dropzone" class="dropzone">
+      <div class="dropzone-inner" data-i18n="dropzone">📂 Markdown dosyasını buraya bırak</div>
+    </div>
+
+    <input type="file" id="fileInput" accept=".md,.markdown,.mdown,.mkd,.txt" hidden />
+
+    <noscript>
+      <div style="max-width: 720px; margin: 40px auto; padding: 0 20px; font-family: sans-serif; line-height: 1.6; color: #1f2328;">
+        <h1>MarkView — Markdown Viewer &amp; Editor</h1>
+        <p>
+          MarkView is a free online <strong>Markdown viewer and editor</strong> with live preview,
+          syntax highlighting, dark mode, and export to <strong>HTML</strong> and <strong>PDF</strong>.
+          You can open <code>.md</code> files directly in your browser or download the desktop app for Windows,
+          which opens Markdown files on double-click.
+        </p>
+        <p>Available in English, Türkçe and Español. Please enable JavaScript to use the app.</p>
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
